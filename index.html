@@ -15,12 +15,12 @@
     <section>
         <h3>Add Employee</h3>
         <form>
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input placeholder="ID Number">
-            <input placeholder="Job Title">
-            <input placeholder="Annual Salary">
-            <button>Submit</button>
+            <input id="first-name" type="text" placeholder="First Name">
+            <input id="last-name" placeholder="Last Name">
+            <input id="id" placeholder="ID Number">
+            <input id="job-title" placeholder="Job Title">
+            <input id="salary" placeholder="Annual Salary">
+            <button onclick="addEmployee(event)">Submit</button>
         </form>
     </section>
 
@@ -37,7 +37,7 @@
                     <th>Delete</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="employee-list">
                 <tr></tr>
             </tbody>
         </table>
