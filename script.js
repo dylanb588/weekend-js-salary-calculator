@@ -51,7 +51,7 @@ function updateTable(data) {
             <td>${data[i].idNumber}</td>
             <td>${data[i].jobTitle}</td>
             <td>$${data[i].annualSalary}</td>
-            <td><button>Delete</button></td>
+            <td><button onclick="removeEmployee(event)">Delete</button></td>
         </tr>`
 
         tableBody.innerHTML += row;
@@ -87,4 +87,8 @@ function calculateBudget(employeeList) {
     } else {
         budgetList.innerHTML += `<p>Monthly Budget: ${formatBudget}</p>`;
     }
+}
+
+function removeEmployee(event) {
+    event.target.closest('tr').remove();
 }
