@@ -1,0 +1,59 @@
+
+/* TABLE */
+
+table {
+    width: 100%;
+    text-align: left;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 2.15em;
+}
+th, td {
+    padding: .5em;
+    min-width: 3.5em;
+}
+thead {
+    background: #74bbda;
+    color: #060101;
+}
+tbody tr:nth-child(odd){ 
+    background: #98b2cea8;
+}
+tbody tr:nth-child(even){
+    background: #9ea9c8;
+}
+
+
+html, body {
+    min-height: 100vh;
+    margin: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height: 5em;
+    background-color: rgb(152, 115, 222);
+    text-align: center;
+}
+main {
+    flex: auto;
+    max-width: 90%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+}
