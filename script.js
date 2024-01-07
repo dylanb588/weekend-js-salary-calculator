@@ -60,6 +60,8 @@ function updateTable(data) {
 
 function calculateBudget(employeeList) {
     if (employeeList.length === 0){
+        const budgetList = document.getElementById("monthly-budget");
+        budgetList.innerHTML = `<div>Monthly Budget: $0.00</div>`;
         return;
     }
     
@@ -90,5 +92,13 @@ function calculateBudget(employeeList) {
 }
 
 function removeEmployee(event) {
-    event.target.closest('tr').remove();
+    let rowRemoved = event.target.closest('tr');
+    let employeeToRemove = Array.from(rowRemoved.parentNode.children).indexOf(rowRemoved);
+    
+    rowRemoved.remove();
+
+    if (employeeToRemove !== -1) {
+        employeeList.splice(employeeToRemove, 1);
+        calculateBudget(employeeList);
+    }
 }
