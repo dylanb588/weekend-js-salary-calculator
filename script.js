@@ -9,13 +9,21 @@ let employeeList = [];
 
 function addEmployee(event) {
     event.preventDefault();
+
     // Create variables to get the user input values
     let firstNameValue = document.getElementById("first-name").value;
     let lastNameValue = document.getElementById("last-name").value;
-    let IDValue = document.getElementById("id").value;
     let jobTitleValue = document.getElementById("job-title").value;
-    // Turns the salary string into a number
+    // Turns the salary and ID string into a number
     let salaryValue = parseFloat(document.getElementById("salary").value);
+    let IDValue = parseFloat(document.getElementById("id").value);
+
+    // Stops from pushing to the array if all fields are not filled in
+    if (!firstNameValue || !lastNameValue || isNaN(IDValue) || !jobTitleValue || isNaN(salaryValue)) {
+        alert("Please fill in all fields with valid values.");
+        return;
+    }
+    
     // Using the input values it creates an object and adds it to the global array
     const employee = {
         firstName: firstNameValue,
