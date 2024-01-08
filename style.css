@@ -15,17 +15,17 @@ th, td {
     min-width: 3.5em;
 }
 thead {
-    background: #74bbda;
+    background: #3da0cb;
     color: #060101;
 }
 tbody tr:nth-child(odd){ 
-    background: #98b2cea8;
+    background: #c0e0ee;
 }
 tbody tr:nth-child(even){
-    background: #9ea9c8;
+    background: #a5d3e7;
 }
 
-
+/* Flex box and setting every to the vertical axis */
 html, body {
     min-height: 100vh;
     margin: auto;
@@ -33,10 +33,11 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background: radial-gradient(circle at top, #fcffeb , #d1bfd8);
 }
 header {
     height: 5em;
-    background-color: rgb(152, 115, 222);
+    background: radial-gradient(circle at top, #61486a , #d1bfd8);
     text-align: center;
 }
 main {
