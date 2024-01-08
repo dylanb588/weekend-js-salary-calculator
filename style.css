@@ -1,9 +1,9 @@
 
-/* TABLE */
+/* Table styling */
 
 table {
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 table, th, td {
     border: 1px solid black;
@@ -25,7 +25,7 @@ tbody tr:nth-child(even){
     background: #a5d3e7;
 }
 
-/* Flex box and setting every to the vertical axis */
+/* Flex box and setting everything to the vertical axis */
 html, body {
     min-height: 100vh;
     margin: auto;
@@ -51,10 +51,23 @@ header {
     justify-content: center;
     align-items: center;
 }
-
+/* Style for the monthly budget after it's created */
 p {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 30%;
+}
+
+/* Style for input form */
+input {
+    padding: 4px;
+    width: 125px;
+    background: #FCFCFC;
+    border: 1px solid;
+}
+label {
+    padding: 4px;
+    width: 75px;
+    background-color: #c3b0c9;
 }

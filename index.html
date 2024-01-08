@@ -12,19 +12,19 @@
 </header>
 
 <main>
-    <section>
+    <section class="container">
         <h3>Add Employee</h3>
         <form onsubmit="addEmployee(event)">
             <label for="first-name">First Name:</label>
-                <input id="first-name" type="text" placeholder="Enter first name">
+                <input id="first-name" type="text" placeholder="Enter First Name">
             <label for="last-name">Last Name:</label>
-                <input id="last-name" type="text" placeholder="Enter last name">
+                <input id="last-name" type="text" placeholder="Enter Last Name">
             <label for="id">ID Number:</label>
-                <input id="id" type="text" placeholder="Enter ID number">
+                <input id="id" type="text" placeholder="Enter ID Number">
             <label for="job-title">Job Title:</label>
-                <input id="job-title" type="text" placeholder="Enter job title">
+                <input id="job-title" type="text" placeholder="Enter Job Title">
             <label for="salary">Annual Salary:</label>
-                <input id="salary" type="text" placeholder="Enter annual salary">
+                <input id="salary" type="text" placeholder="Enter Annual Salary">
             <button type="submit">Submit</button>
         </form>
     </section>
@@ -34,12 +34,12 @@
         <table>
             <thead>
                 <tr>
-                    <th align="center">First Name</th>
-                    <th align="center">Last Name</th>
-                    <th align="center">ID</th>
-                    <th align="center">Job Title</th>
-                    <th align="center">Annual Salary</th>
-                    <th align="center">Delete</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Job Title</th>
+                    <th>Annual Salary</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody id="employee-list">

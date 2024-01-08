@@ -56,12 +56,12 @@ function updateTable(data) {
 
         let row = `
         <tr>
-            <td align="center">${data[i].firstName}</td>
-            <td align="center">${data[i].lastName}</td>
-            <td align="center">${data[i].idNumber}</td>
-            <td align="center">${data[i].jobTitle}</td>
-            <td align="center">$${data[i].annualSalary}</td>
-            <td align="center"><button onclick="removeEmployee(event)">Delete</button></td>
+            <td>${data[i].firstName}</td>
+            <td>${data[i].lastName}</td>
+            <td>${data[i].idNumber}</td>
+            <td>${data[i].jobTitle}</td>
+            <td>$${data[i].annualSalary}</td>
+            <td><button onclick="removeEmployee(event)">Delete</button></td>
         </tr>`
 
         tableBody.innerHTML += row;
